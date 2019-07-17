@@ -89,3 +89,7 @@ USER root
 RUN chown -R developer /harness
 USER developer
 
+###################################################
+# Install tmkms locally
+
+RUN cargo install tmkms --features=yubihsm
